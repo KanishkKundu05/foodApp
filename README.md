@@ -1,97 +1,82 @@
-# SuperApp 🚀
+# SousAI - Your AI Cooking Assistant
 
-A modern, well-organized application built with best practices and a clean architecture.
+A Next.js application that helps you create, manage, and cook recipes with AI assistance.
 
-## 📁 Project Structure
+## Features
 
-```
-SuperApp/
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/         # Page-level components
-│   ├── utils/         # Utility functions and helpers
-│   ├── services/      # API calls and external services
-│   ├── styles/        # Global styles and themes
-│   └── assets/        # Static assets (images, icons, fonts)
-├── public/            # Public static files
-├── docs/             # Documentation
-├── tests/            # Test files
-├── scripts/          # Build and deployment scripts
-└── config/           # Configuration files
-```
+- 🤖 AI-powered recipe creation
+- 👩‍🍳 Interactive cooking assistance
+- 📝 Recipe management and storage
+- 🔒 User authentication with Supabase
+- 💬 Real-time chat with cooking tips
+- 📱 Responsive design for all devices
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend**: React/Next.js
-- **Styling**: Tailwind CSS / Styled Components
-- **State Management**: Redux Toolkit / Zustand
-- **Testing**: Jest + React Testing Library
-- **Linting**: ESLint + Prettier
-- **Type Checking**: TypeScript
+- Next.js 15.2.4
+- React 18
+- TypeScript
+- Tailwind CSS
+- Supabase
+- OpenAI GPT-4
+- Radix UI Components
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Git
+- Node.js 18+ 
+- npm/pnpm
+- Supabase account
+- OpenAI API key
 
-### Installation
+### Environment Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/SuperApp.git
-cd SuperApp
+git clone [your-repo-url]
+cd food-app
 ```
 
 2. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
 ```
 
-3. Start the development server:
+3. Create a `.env.local` file with the following variables:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+OPENAI_API_KEY=your_openai_api_key
+```
+
+4. Initialize Supabase:
+```bash
+./setup-supabase.sh
+```
+
+5. Start the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Project Structure
 
-## 📝 Available Scripts
+- `/app` - Next.js app router pages and API routes
+- `/components` - Reusable React components
+- `/hooks` - Custom React hooks
+- `/lib` - Utility functions and configurations
+- `/stores` - State management (Zustand)
+- `/styles` - Global styles and Tailwind configuration
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run test` - Run tests
-- `npm run lint` - Run ESLint
-- `npm run format` - Format code with Prettier
-
-## 🏗️ Architecture
-
-This project follows a modular architecture with clear separation of concerns:
-
-- **Components**: Reusable UI components with proper prop typing
-- **Pages**: Route-level components that compose smaller components
-- **Services**: API integration and external service calls
-- **Utils**: Helper functions and utilities
-- **Styles**: Global styling and theme configuration
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Support
-
-If you have any questions or need help, please open an issue on GitHub. 
